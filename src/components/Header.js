@@ -25,12 +25,11 @@ export default Header
 
 const HeaderContainer = styled.div `
   display: flex;
-  position: fixed;
+  position: sticky;
   align-items: center;
   border-bottom: 1px solid lightgray;
   padding: 10px;
-  background: none;
-  width: 100vw;
+  background-color: whitesmoke;
   top: 0;
   z-index: 999;
 `;
@@ -51,11 +50,11 @@ const HeaderRight = styled.div.attrs(props => ({
   }
   > p:hover {
       cursor: pointer;
-      color: lightgray;
+      color: lightblue;
   }
 
   & .last {
-    padding-right: 15px;
+    margin-right: 15px;
   }
   
 `

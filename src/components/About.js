@@ -1,16 +1,27 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function About() {
+const About = () => {
     return (
         <AboutContainer>
-          <h1>about</h1>
+          <About__inner>
+            <h1>About</h1>
+          </About__inner>
         </AboutContainer>
     )
 }
 
 export default About
 
-const AboutContainer = styled.div`
-    color: red;
+const AboutContainer = styled.section`
+  display: flex;
+  justify-content: center;
+`;
+
+const About__inner = styled.div`
+  border: 50px 1px solid lightgray;
+  border-radius: 15px;
+  height: 100%;
+  width: 100;
+  background-color: white;
 `;
