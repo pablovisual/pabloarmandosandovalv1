@@ -88,6 +88,7 @@ export default About
 
 const AboutContainer = styled.section`
   height: fit-content;
+  border-bottom: 1px solid black;
 `;
 
 const About__Inner = styled.div`
