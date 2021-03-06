@@ -103,7 +103,7 @@ const Skills = () => {
                 </CardContent>
               </Card>
 
-              <Card className={classes.root} style={{height: 240, marginBottom: 10}}>
+              <Card className={classes.root} style={{marginBottom: 10}}>
                 <CardContent>
                   <Typography className={classes.title} style={{textAlign: "center"}} variant="h4" component="h2" color="textPrimary">
                     Database
