@@ -4,8 +4,9 @@ import Header from "./components/Header";
 import styled from 'styled-components';
 import About from "./components/About";
 import Skills from "./components/Skills";
-import './App.css';
 import Experience from "./components/Experience";
+import Projects from "./components/Projects";
+import './App.css';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             {/**Skills page */}
             <Skills />
             <Experience />
+          
           </Route>
         </Switch>
       </>

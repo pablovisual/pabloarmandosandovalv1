@@ -101,11 +101,13 @@ const About__Inner = styled.div`
 
 const About__image = styled.div`
   box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
 `;
 
 
 const About__description = styled.div`
   box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
 `;
 
 

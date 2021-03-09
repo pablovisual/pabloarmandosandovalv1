@@ -16,12 +16,16 @@ const useStyles = makeStyles({
       transition: 'transform 0.3s',
 
       "&:hover": {
-      transform: 'scale(1.05)'}
+      transform: 'scale(1.05)'},
+
+      boxShadow: "-1px 4px 20px -6px rgba(0, 0, 0, 0.75)",
     },
 
     titleSection: {
       fontSize: 60,
       fontWeight: 'bolder',
+      textAlign: "center",
+      textTransform: "uppercase"
     },
 
     title: {
@@ -32,10 +36,11 @@ const useStyles = makeStyles({
 
 const Skills = () => {
   const classes = useStyles();
+
     return (
         <SkillsContainer>
           {/**title */}
-          <h1 className={classes.titleSection} style={{textAlign: 'center'}}>Tech Skills</h1>
+          <h1 className={classes.titleSection}>tech skills</h1>
           {/**skills*/}
           <SkillCards>
             {/**Programming Languages */}
@@ -254,6 +259,7 @@ const SkillsBackend__Database__HostingPlatformCard = styled.div.attrs(props => (
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+
   & .backend {
       display: flex;
       align-items: center;
@@ -334,7 +340,7 @@ const SkillsVersionControlCard = styled.div.attrs(props => ({
   className: props.className,
 }))`
   flex: 0.25;
-
+  
   & .versionControl {
       display: flex;
       align-items: center;
