@@ -6,6 +6,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import Education from "./components/Education";
 import './App.css';
 
 function App() {
@@ -21,10 +22,18 @@ function App() {
           <Route path="/pabloarmandosandoval/" exact>
             {/**About page */}
             <About />
+
             {/**Skills page */}
             <Skills />
+
+            {/**Experience page */}
             <Experience />
-          
+
+            {/**Projects page */}
+            <Projects />
+
+            {/**Educations page */}
+            <Education />
           </Route>
         </Switch>
       </>

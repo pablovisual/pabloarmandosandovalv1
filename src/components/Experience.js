@@ -35,7 +35,10 @@ const useStyles = makeStyles({
     root: {
       border: '1px solid rgba(0, 0, 0, .125)',
       borderRadius: 4,
-      boxShadow: 'none',
+      transition: 'transform 0.3s',
+      "&:hover": { transform: 'scale(1.05)' },
+      boxShadow: "-1px 4px 20px -6px rgba(0, 0, 0, 0.75)",
+      
       '&:not(:last-child)': {
         borderBottom: 0,
       },
@@ -78,6 +81,7 @@ const useStyles = makeStyles({
       padding: theme.spacing(2),
       display: "flex",
       flexDirection: "column",
+      "&p": { fontSize: 18}
     },
   }))(MuiAccordionDetails);
   
@@ -165,13 +169,9 @@ const ExperienceCompanyName = styled.div`
     margin-bottom: 20px;
   }
 
-  > p {
+  > p:not(:last-child) {
     margin-bottom: 20px;
     color: gray;
-  }
-
-  > p:last-child {
-    margin-bottom: 0px;
   }
 
   > p > strong {

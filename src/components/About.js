@@ -15,9 +15,9 @@ import ArrowBackIosRoundedIcon from '@material-ui/icons/ArrowBackIosRounded';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth:1200,
+    maxWidth: 1200,
   },
-  
+
   media: {
     height: 340,
   },
@@ -35,44 +35,44 @@ const About = () => {
       <About__Inner>
         <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
           <About__image>
-            <Card className={classes.root} style={{width: 600}} variant="outlined">
+            <Card className={classes.root} style={{ width: 600 }} variant="outlined">
               <CardActionArea>
                 <CardMedia
                   className={classes.media}
                   image={bum}
                   title="Pablo Sandoval"
-                  alt="" 
+                  alt=""
                 />
               </CardActionArea>
-                <About__next>
-                  <Typography variant="h2" color="lightgray">
-                    ABOUT ME
+              <About__next>
+                <Typography variant="h2">
+                  ABOUT ME
                   </Typography>
-                  <IconButton onClick={handleClick}>
-                    <ArrowForwardIosRoundedIcon fontSize="large" />
-                  </IconButton>
-                </About__next>
+                <IconButton onClick={handleClick}>
+                  <ArrowForwardIosRoundedIcon fontSize="large" />
+                </IconButton>
+              </About__next>
 
             </Card>
           </About__image>
 
           <About__description>
             <Card className={classes.root}>
-              <CardContent className={classes.media} style={{padding: 20, width: 560, height: 374}}>
-                <Typography variant="h5" color="blue" component="h2" align="center">
+              <CardContent className={classes.media} style={{ padding: 20, width: 560, height: 374 }}>
+                <Typography variant="h5" component="h2" align="center">
                   Hello, my name is Pablo Armando Sandoval
                 </Typography>
 
                 <Typography variant="h5" color="textSecondary" component="h2">
-                  I am an inspired software developer who is driven to create amazing applications 
-                  and like to learn new types of frameworks and programming languages. I've learned react js with firebase for authentication and data storing 
-                  that help create clones such as amazon, twitter, discord, linkedin, and facebook. 
+                  I am an inspired software developer who is driven to create amazing applications
+                  and like to learn new types of frameworks and programming languages. I've learned react js with firebase for authentication and data storing
+                  that help create clones such as amazon, twitter, discord, linkedin, and facebook.
                   I'm willing to learn new things to gain lots of experiences and become a better
                   engineer that could land me the best companies for my career.
                 </Typography>
                 <About__back>
                   <IconButton onClick={handleClick}>
-                    <ArrowBackIosRoundedIcon fontSize="large"/>
+                    <ArrowBackIosRoundedIcon fontSize="large" />
                   </IconButton>
                 </About__back>
               </CardContent>

@@ -7,17 +7,14 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import CardMedia from "@material-ui/core/CardMedia";
-import { skills } from "./Tech-Skills";
+import { skills } from "./SkillList";
 
 const useStyles = makeStyles({
     root: {
       maxWidth: 365,
-
       transition: 'transform 0.3s',
-
       "&:hover": {
       transform: 'scale(1.05)'},
-
       boxShadow: "-1px 4px 20px -6px rgba(0, 0, 0, 0.75)",
     },
 
@@ -25,7 +22,8 @@ const useStyles = makeStyles({
       fontSize: 60,
       fontWeight: 'bolder',
       textAlign: "center",
-      textTransform: "uppercase"
+      textTransform: "uppercase",
+      marginBottom: 20,
     },
 
     title: {
@@ -55,7 +53,7 @@ const Skills = () => {
                     {skills.programmingLanguages.map((skill, index) => (
                     <div className="programmingLanguages" key={index}>
                       <a href={skill.link} target="_blank" rel="noopener noreferrer">
-                        <img style={{objectFit: "contain", width: 50, height: 50, marginRight: 20}} src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style m-1" /> 
+                        <img style={{objectFit: "contain", width: 50, height: 50, marginRight: 20}} src={skill.imgSrc} alt={skill.imgAltText} rounded="true" className="image-style m-1" /> 
                       </a>
                       <a href={skill.link} className="programmingLanguages__name" style={{textAlign: "center"}}>{skill.skillName}</a>
                     </div>
@@ -77,7 +75,7 @@ const Skills = () => {
                     {skills.frontend.map((skill, index) => (
                     <div className="frontend" key={index}>
                       <a href={skill.link} target="_blank" rel="noopener noreferrer">
-                        <img style={{objectFit: "contain", width: 50, height: 50, marginRight: 20}} src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style m-1" /> 
+                        <img style={{objectFit: "contain", width: 50, height: 50, marginRight: 20}} src={skill.imgSrc} alt={skill.imgAltText} rounded="true" className="image-style m-1" /> 
                       </a>
                       <a href={skill.link} className="frontend__name" style={{textAlign: "center"}}>{skill.skillName}</a>
                     </div>
@@ -99,7 +97,7 @@ const Skills = () => {
                     {skills.backend.map((skill, index) => (
                     <div className="backend" key={index}>
                       <a href={skill.link} target="_blank" rel="noopener noreferrer">
-                        <img style={{objectFit: "contain", width: 50, height: 50, marginRight: 20}} src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style m-1" /> 
+                        <img style={{objectFit: "contain", width: 50, height: 50, marginRight: 20}} src={skill.imgSrc} alt={skill.imgAltText} rounded="true" className="image-style m-1" /> 
                       </a>
                       <a href={skill.link} className="backend__name" style={{textAlign: "center"}}>{skill.skillName}</a>
                     </div>
@@ -118,7 +116,7 @@ const Skills = () => {
                     {skills.databases.map((skill, index) => (
                     <div className="database" key={index}>
                       <a href={skill.link} target="_blank" rel="noopener noreferrer">
-                        <img style={{objectFit: "contain", width: 50, height: 50, marginRight: 20}} src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style m-1" /> 
+                        <img style={{objectFit: "contain", width: 50, height: 50, marginRight: 20}} src={skill.imgSrc} alt={skill.imgAltText} rounded="true" className="image-style m-1" /> 
                       </a>
                       <a href={skill.link} className="database__name" style={{textAlign: "center"}}>{skill.skillName}</a>
                     </div>
@@ -137,7 +135,7 @@ const Skills = () => {
                     {skills.hostingPlatforms.map((skill, index) => (
                     <div className="hostingPlatforms" key={index}>
                       <a href={skill.link} target="_blank" rel="noopener noreferrer">
-                        <img style={{objectFit: "contain", width: 50, height: 50, marginRight: 20}} src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style m-1" /> 
+                        <img style={{objectFit: "contain", width: 50, height: 50, marginRight: 20}} src={skill.imgSrc} alt={skill.imgAltText} rounded="true" className="image-style m-1" /> 
                       </a>
                       <a href={skill.link} className="hostingPlatforms__name" style={{textAlign: "center"}}>{skill.skillName}</a>
                     </div>
@@ -158,7 +156,7 @@ const Skills = () => {
                     {skills.versionControl.map((skill, index) => (
                     <div className="versionControl" key={index}>
                       <a href={skill.link} target="_blank" rel="noopener noreferrer">
-                        <img style={{objectFit: "contain", width: 50, height: 50, marginRight: 20}} src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style m-1" /> 
+                        <img style={{objectFit: "contain", width: 50, height: 50, marginRight: 20}} src={skill.imgSrc} alt={skill.imgAltText} rounded="true" className="image-style m-1" /> 
                       </a>
                       <a href={skill.link} className="versionControl__name" style={{textAlign: "center"}}>{skill.skillName}</a>
                     </div>
@@ -178,7 +176,6 @@ const SkillsContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-
   padding: 5px;
   border-bottom: 1px solid black;
 `;
