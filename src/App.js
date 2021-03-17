@@ -8,6 +8,7 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Education from "./components/Education";
 import './App.css';
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
 
             {/**Educations page */}
             <Education />
+
+            {/**Contact page */}
+            <Contact />
           </Route>
         </Switch>
       </>

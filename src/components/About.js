@@ -86,7 +86,7 @@ const About = () => {
 
 export default About
 
-const AboutContainer = styled.section`
+const AboutContainer = styled.div`
   height: fit-content;
   border-bottom: 1px solid black;
 `;

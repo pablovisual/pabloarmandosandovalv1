@@ -24,8 +24,8 @@ export const projectList = [
       "Redux",
     ],
     sources: {
-      "Source Code": "ds",
-      "View Demo": "fd"
+      "Source Code": "#",
+      "View Demo": "#"
     },
   },
 
@@ -49,8 +49,8 @@ export const projectList = [
       "Redux",
     ],
     sources: {
-      "Source Code": "ds",
-      "View Demo": "fd"
+      "Source Code": "#",
+      "View Demo": "#"
     },
   },
 
@@ -74,8 +74,8 @@ export const projectList = [
       "Redux",
     ],
     sources: {
-      "Source Code": "ds",
-      "View Demo": "fd"
+      "Source Code": "#",
+      "View Demo": "#"
     },
   },
 
@@ -99,8 +99,8 @@ export const projectList = [
       "Redux",
     ],
     sources: {
-      "Source Code": "ds",
-      "View Demo": "fd"
+      "Source Code": "#",
+      "View Demo": "#"
     },
   },
 
@@ -124,8 +124,8 @@ export const projectList = [
       "ReactJS",
     ],
     sources: {
-      "Source Code": "ds",
-      "View Demo": "fd"
+      "Source Code": "#",
+      "View Demo": "#"
     },
   },
 
@@ -149,8 +149,8 @@ export const projectList = [
       "Redux",
     ],
     sources: {
-      "Source Code": "ds",
-      "View Demo": "fd"
+      "Source Code": "#",
+      "View Demo": "#"
     },
   },
 
@@ -200,7 +200,7 @@ export const projectList = [
     ],
     sources: {
       "Source Code": "https://github.com/pablovisual/sportsApp/tree/master/sideproject",
-      "View Demo": "fd"
+      "View Demo": "#"
     },
   },
 ];
