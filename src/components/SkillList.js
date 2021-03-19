@@ -23,7 +23,6 @@ import GIT from "../assets/git.svg";
 import NPM from "../assets/npm.svg";
 import TERMINAL from "../assets/terminal-1.svg";
 
-
 export const skills = {
   frontend: [
     {

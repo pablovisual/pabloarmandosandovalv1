@@ -44,14 +44,14 @@ const About = () => {
                   alt=""
                 />
               </CardActionArea>
-              <About__next>
+              <About__front>
                 <Typography variant="h2">
                   ABOUT ME
                   </Typography>
                 <IconButton onClick={handleClick}>
                   <ArrowForwardIosRoundedIcon fontSize="large" />
                 </IconButton>
-              </About__next>
+              </About__front>
 
             </Card>
           </About__image>
@@ -111,7 +111,7 @@ const About__description = styled.div`
 `;
 
 
-const About__next = styled.div`
+const About__front = styled.div`
   display: flex;
   justify-content: center;
   font-size: 15px; 

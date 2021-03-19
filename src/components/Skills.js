@@ -24,6 +24,7 @@ const useStyles = makeStyles({
       textAlign: "center",
       textTransform: "uppercase",
       marginBottom: 20,
+      color: "whitesmoke",
     },
 
     title: {

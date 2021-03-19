@@ -22,38 +22,39 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 'bolder',
     textTransform: "uppercase",
     marginBottom: 15,
+    color: "whitesmoke",
   },
 }));
 
 const theme = createMuiTheme({
   palette: {
-    primary: green
+    primary: green,
   }
 });
 
+const getTimelineElements = () => projectList.map((element, index) => (
+  <VerticalTimelineElement {...element.props}>
+    <ToolsList>
+      {element.tools.map((toolNames, index) => (<p key={index}>{toolNames}</p>))}
+    </ToolsList>
+    <h3 className="vertical-timeline-element-title">{element.title}</h3>
+    <h4 className="vertical-timeline-element-subtitle">{element.subtitle}</h4>
+    <p>{element.content}</p>
+    <ButtonList>
+      {Object.entries(element.sources).map(
+        (key, index) => (
+          <ThemeProvider key={index} theme={theme}>
+            <Button className="buttonList" href={key[1]} variant="outlined" color='primary'>
+              {key[0]}
+            </Button>
+          </ThemeProvider>
+        ))}
+    </ButtonList>
+  </VerticalTimelineElement>
+));
+
 const Projects = () => {
   const classes = useStyles();
-
-  const getTimelineElements = () => projectList.map((element, index) => (
-    <VerticalTimelineElement {...element.props}>
-      <ToolsList>
-        {element.tools.map((toolNames, index) => (<p key={index}>{toolNames}</p>))}
-      </ToolsList>
-      <h3 className="vertical-timeline-element-title">{element.title}</h3>
-      <h4 className="vertical-timeline-element-subtitle">{element.subtitle}</h4>
-      <p>{element.content}</p>
-      <ButtonList>
-        {Object.entries(element.sources).map(
-          (key, index) => (
-            <ThemeProvider key={index} theme={theme}>
-              <Button href={key[1]} variant="outlined" color="primary" className={classes.margin}>
-                {key[0]}
-              </Button>
-            </ThemeProvider>
-          ))}
-      </ButtonList>
-    </VerticalTimelineElement>
-  ));
 
   return (
     <ProjectsContainer>
@@ -105,6 +106,23 @@ const ToolsList = styled.div`
   }
 `;
 
-const ButtonList = styled.div`
+const ButtonList = styled.div.attrs(props => ({
+  className: props.className,
+}))`
   display: flex;
+  & .buttonList { 
+      :not(:last-child) { 
+        margin-right: 10px;
+      }
+    }
+
+  > .MuiButton-outlinedPrimary {
+    color: green;
+    border: 1px solid rgba(76, 175, 80, 0.5);
+  }
+
+  > .MuiButton-outlinedPrimary:hover {
+    border: 1px solid #4caf50;
+    background-color: rgba(76, 175, 80, 0.04);
+  }
 `;

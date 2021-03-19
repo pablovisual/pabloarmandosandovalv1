@@ -40,6 +40,7 @@ const EducationContainer = styled.div`
     font-size: 60px;
     font-weight: bolder;
     margin-bottom: 15px;
+    color: whitesmoke;
   }
 
   display: flex;
@@ -68,7 +69,6 @@ const EducationDegree = styled.div`
     flex-direction: column;
     border: 4px solid black;
     border-radius: 10px;
-    font-size: 15px;
     background-color: white;
     cursor: pointer;
     box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
@@ -108,7 +108,6 @@ const EducationDegreeLeft = styled.div`
 
 const EducationDegreeRight = styled.div`
   padding: 10px;
-
   > p {
     font-size: 20px;
     font-weight: 600px;

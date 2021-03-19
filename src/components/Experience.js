@@ -17,6 +17,7 @@ const useStyles = makeStyles({
       fontWeight: 'bolder',
       textTransform: "uppercase",
       marginBottom: 15,
+      color: "whitesmoke",
     },
 
     header: {
