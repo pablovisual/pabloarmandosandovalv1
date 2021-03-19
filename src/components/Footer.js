@@ -3,18 +3,18 @@ import styled from "styled-components";
 
 const Footer = () => {
   return (
-    <FooterContainer>
-      <Footer>
-        © {new Date().getFullYear()}
-      </Footer>
+    <FooterContainer className="footer-style">
+      © {new Date().getFullYear()} | All Rights Reserved
     </FooterContainer>
   )
 }
 
 export default Footer
 
-const FooterContainer = styled.div``;
-
-const Footer = styled.div`
-
+const FooterContainer = styled.div`
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  font-size: 2em;
+  padding: 10px;
 `;

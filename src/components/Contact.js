@@ -7,7 +7,7 @@ import { contactList } from "./ContactList";
 const getContactList = () => contactList.map(element => (
   <ButtonList>
     {Object.entries(element.sources).map((key, index) => (
-      <Button className="buttonList" href={key[1][0]} key={index} size="large" variant="outlined" color="primary" startIcon={key[1][1]}>
+      <Button style={{color: `${key[1][2]}`, border: `1px solid ${key[1][2]}`}} className="buttonList" href={key[1][0]} key={index} size="large" variant="outlined" startIcon={key[1][1]}>
         {key[0]}
       </Button>
     ))}
@@ -33,19 +33,19 @@ const ContactContainer = styled.div`
   margin-top: 20px;
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid black;
 `;
 
 const ContactForm = styled.div`
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 `;
 
 const PaperComponent = styled(Paper)`
   border-radius: 15px;
   > h1{
     text-align: center;
+    text-transform: uppercase;
     font-size: 60px;
-    font-weight: bolder;
+    font-weight: 400;
     margin-bottom: 15px;
   }
   padding: 20px;
@@ -63,15 +63,5 @@ const ButtonList = styled.div`
         margin-right: 10px;
       }
     }
-
-  > .MuiButton-outlinedPrimary {
-    color: green;
-    border: 1px solid rgba(76, 175, 80, 0.5);
-  }
-
-  > .MuiButton-outlinedPrimary:hover {
-    border: 1px solid #4caf50;
-    background-color: rgba(76, 175, 80, 0.04);
-  }
 `;
 

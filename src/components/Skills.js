@@ -20,7 +20,7 @@ const useStyles = makeStyles({
 
     titleSection: {
       fontSize: 60,
-      fontWeight: 'bolder',
+      fontWeight: 400,
       textAlign: "center",
       textTransform: "uppercase",
       marginBottom: 20,

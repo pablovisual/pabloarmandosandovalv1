@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
 
   titleSection: {
     fontSize: 60,
-    fontWeight: 'bolder',
+    fontWeight: 400,
     textTransform: "uppercase",
     marginBottom: 15,
     color: "whitesmoke",
