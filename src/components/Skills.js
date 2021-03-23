@@ -10,165 +10,166 @@ import CardMedia from "@material-ui/core/CardMedia";
 import { skills } from "./SkillList";
 
 const useStyles = makeStyles({
-    root: {
-      maxWidth: 365,
-      transition: 'transform 0.3s',
-      "&:hover": {
-      transform: 'scale(1.05)'},
-      boxShadow: "-1px 4px 20px -6px rgba(0, 0, 0, 0.75)",
+  root: {
+    maxWidth: 365,
+    transition: 'transform 0.3s',
+    "&:hover": {
+      transform: 'scale(1.05)'
     },
+    boxShadow: "-1px 4px 20px -6px rgba(0, 0, 0, 0.75)",
+  },
 
-    titleSection: {
-      fontSize: 60,
-      fontWeight: 400,
-      textAlign: "center",
-      textTransform: "uppercase",
-      marginBottom: 20,
-      color: "whitesmoke",
-    },
+  titleSection: {
+    fontSize: 60,
+    fontWeight: 400,
+    textAlign: "center",
+    textTransform: "uppercase",
+    marginBottom: 20,
+    color: "whitesmoke",
+  },
 
-    title: {
-      fontSize: 40,
-      fontWeight: 600,
-    },
-  });
+  title: {
+    fontSize: 40,
+    fontWeight: 600,
+  },
+});
 
 const Skills = () => {
   const classes = useStyles();
 
-    return (
-        <SkillsContainer id="/skills">
-          {/**title */}
-          <SkillsContainerHeader><h1 className={classes.titleSection}>tech skills</h1></SkillsContainerHeader>
-          {/**skills*/}
-          <SkillCards>
-            {/**Programming Languages */}
-            <SkillsProgrammingLanguagesCard style={{marginLeft: 10}}>
-              <Card className={classes.root}>
-                <CardContent>
-                  <Typography className={classes.title} style={{textAlign: "center" }} variant="h4" component="h2" color="textPrimary">
-                    Programming Languages
+  return (
+    <SkillsContainer id="/skills">
+      {/**title */}
+      <SkillsContainerHeader><h1 className={classes.titleSection}>tech skills</h1></SkillsContainerHeader>
+      {/**skills*/}
+      <SkillCards>
+        {/**Programming Languages */}
+        <SkillsProgrammingLanguagesCard style={{ marginLeft: 10 }}>
+          <Card className={classes.root}>
+            <CardContent>
+              <Typography className={classes.title} style={{ textAlign: "center" }} variant="h4" component="h2" color="textPrimary">
+                Programming Languages
                     <hr />
-                  </Typography>
-                  <SkillsProgrammingLanguages>
-                    {skills.programmingLanguages.map((skill, index) => (
-                    <div className="programmingLanguages" key={index}>
-                      <a href={skill.link} target="_blank" rel="noopener noreferrer">
-                        <img style={{objectFit: "contain", width: 50, height: 50, marginRight: 20}} src={skill.imgSrc} alt={skill.imgAltText} rounded="true" className="image-style m-1" /> 
-                      </a>
-                      <a href={skill.link} className="programmingLanguages__name" style={{textAlign: "center"}}>{skill.skillName}</a>
-                    </div>
-                   ))}
-                  </SkillsProgrammingLanguages>
-                </CardContent>
-              </Card>
-            </SkillsProgrammingLanguagesCard>
+              </Typography>
+              <SkillsProgrammingLanguages>
+                {skills.programmingLanguages.map((skill, index) => (
+                  <div className="programmingLanguages" key={index}>
+                    <a href={skill.link} target="_blank" rel="noopener noreferrer">
+                      <img style={{ objectFit: "contain", width: 50, height: 50, marginRight: 20 }} src={skill.imgSrc} alt={skill.imgAltText} rounded="true" className="image-style m-1" />
+                    </a>
+                    <a href={skill.link} className="programmingLanguages__name" style={{ textAlign: "center" }}>{skill.skillName}</a>
+                  </div>
+                ))}
+              </SkillsProgrammingLanguages>
+            </CardContent>
+          </Card>
+        </SkillsProgrammingLanguagesCard>
 
-            {/**Frontend */}
-            <SkillsFrontendCard>
-              <Card className={classes.root}>
-                <CardContent>
-                  <Typography className={classes.title} style={{textAlign: "center"}} variant="h4" component="h2" color="textPrimary">
-                    Frontend
+        {/**Frontend */}
+        <SkillsFrontendCard>
+          <Card className={classes.root}>
+            <CardContent>
+              <Typography className={classes.title} style={{ textAlign: "center" }} variant="h4" component="h2" color="textPrimary">
+                Frontend
                     <hr />
-                  </Typography>
-                  <SkillsFrontend>
-                    {skills.frontend.map((skill, index) => (
-                    <div className="frontend" key={index}>
-                      <a href={skill.link} target="_blank" rel="noopener noreferrer">
-                        <img style={{objectFit: "contain", width: 50, height: 50, marginRight: 20}} src={skill.imgSrc} alt={skill.imgAltText} rounded="true" className="image-style m-1" /> 
-                      </a>
-                      <a href={skill.link} className="frontend__name" style={{textAlign: "center"}}>{skill.skillName}</a>
-                    </div>
-                   ))}
-                  </SkillsFrontend>
-                </CardContent>
-              </Card>
-            </SkillsFrontendCard>
+              </Typography>
+              <SkillsFrontend>
+                {skills.frontend.map((skill, index) => (
+                  <div className="frontend" key={index}>
+                    <a href={skill.link} target="_blank" rel="noopener noreferrer">
+                      <img style={{ objectFit: "contain", width: 50, height: 50, marginRight: 20 }} src={skill.imgSrc} alt={skill.imgAltText} rounded="true" className="image-style m-1" />
+                    </a>
+                    <a href={skill.link} className="frontend__name" style={{ textAlign: "center" }}>{skill.skillName}</a>
+                  </div>
+                ))}
+              </SkillsFrontend>
+            </CardContent>
+          </Card>
+        </SkillsFrontendCard>
 
-            {/**Backend, Database, hosting platform */}
-            <SkillsBackend__Database__HostingPlatformCard>
-              <Card className={classes.root} style={{marginBottom: 10}}>
-                <CardContent>
-                  <Typography className={classes.title} style={{textAlign: "center"}} variant="h4" component="h2" color="textPrimary">
-                    Backend
+        {/**Backend, Database, hosting platform */}
+        <SkillsBackend__Database__HostingPlatformCard>
+          <Card className={classes.root} style={{ marginBottom: 10 }}>
+            <CardContent>
+              <Typography className={classes.title} style={{ textAlign: "center" }} variant="h4" component="h2" color="textPrimary">
+                Backend
                     <hr />
-                  </Typography>
-                  <SkillsBackend>
-                    {skills.backend.map((skill, index) => (
-                    <div className="backend" key={index}>
-                      <a href={skill.link} target="_blank" rel="noopener noreferrer">
-                        <img style={{objectFit: "contain", width: 50, height: 50, marginRight: 20}} src={skill.imgSrc} alt={skill.imgAltText} rounded="true" className="image-style m-1" /> 
-                      </a>
-                      <a href={skill.link} className="backend__name" style={{textAlign: "center"}}>{skill.skillName}</a>
-                    </div>
-                   ))}
-                  </SkillsBackend>
-                </CardContent>
-              </Card>
+              </Typography>
+              <SkillsBackend>
+                {skills.backend.map((skill, index) => (
+                  <div className="backend" key={index}>
+                    <a href={skill.link} target="_blank" rel="noopener noreferrer">
+                      <img style={{ objectFit: "contain", width: 50, height: 50, marginRight: 20 }} src={skill.imgSrc} alt={skill.imgAltText} rounded="true" className="image-style m-1" />
+                    </a>
+                    <a href={skill.link} className="backend__name" style={{ textAlign: "center" }}>{skill.skillName}</a>
+                  </div>
+                ))}
+              </SkillsBackend>
+            </CardContent>
+          </Card>
 
-              <Card className={classes.root} style={{marginBottom: 10}}>
-                <CardContent>
-                  <Typography className={classes.title} style={{textAlign: "center"}} variant="h4" component="h2" color="textPrimary">
-                    Database
+          <Card className={classes.root} style={{ marginBottom: 10 }}>
+            <CardContent>
+              <Typography className={classes.title} style={{ textAlign: "center" }} variant="h4" component="h2" color="textPrimary">
+                Database
                     <hr />
-                  </Typography>
-                  <SkillsDatabase>
-                    {skills.databases.map((skill, index) => (
-                    <div className="database" key={index}>
-                      <a href={skill.link} target="_blank" rel="noopener noreferrer">
-                        <img style={{objectFit: "contain", width: 50, height: 50, marginRight: 20}} src={skill.imgSrc} alt={skill.imgAltText} rounded="true" className="image-style m-1" /> 
-                      </a>
-                      <a href={skill.link} className="database__name" style={{textAlign: "center"}}>{skill.skillName}</a>
-                    </div>
-                   ))}
-                  </SkillsDatabase>
-                </CardContent>
-              </Card>
+              </Typography>
+              <SkillsDatabase>
+                {skills.databases.map((skill, index) => (
+                  <div className="database" key={index}>
+                    <a href={skill.link} target="_blank" rel="noopener noreferrer">
+                      <img style={{ objectFit: "contain", width: 50, height: 50, marginRight: 20 }} src={skill.imgSrc} alt={skill.imgAltText} rounded="true" className="image-style m-1" />
+                    </a>
+                    <a href={skill.link} className="database__name" style={{ textAlign: "center" }}>{skill.skillName}</a>
+                  </div>
+                ))}
+              </SkillsDatabase>
+            </CardContent>
+          </Card>
 
-              <Card className={classes.root}>
-                <CardContent>
-                  <Typography className={classes.title} style={{textAlign: "center"}} variant="h4" component="h2" color="textPrimary">
-                    Hosting Platforms
+          <Card className={classes.root}>
+            <CardContent>
+              <Typography className={classes.title} style={{ textAlign: "center" }} variant="h4" component="h2" color="textPrimary">
+                Hosting Platforms
                     <hr />
-                  </Typography>
-                  <SkillsHostingPlatforms>
-                    {skills.hostingPlatforms.map((skill, index) => (
-                    <div className="hostingPlatforms" key={index}>
-                      <a href={skill.link} target="_blank" rel="noopener noreferrer">
-                        <img style={{objectFit: "contain", width: 50, height: 50, marginRight: 20}} src={skill.imgSrc} alt={skill.imgAltText} rounded="true" className="image-style m-1" /> 
-                      </a>
-                      <a href={skill.link} className="hostingPlatforms__name" style={{textAlign: "center"}}>{skill.skillName}</a>
-                    </div>
-                   ))}
-                  </SkillsHostingPlatforms>
-                </CardContent>
-              </Card>
-            </SkillsBackend__Database__HostingPlatformCard>
+              </Typography>
+              <SkillsHostingPlatforms>
+                {skills.hostingPlatforms.map((skill, index) => (
+                  <div className="hostingPlatforms" key={index}>
+                    <a href={skill.link} target="_blank" rel="noopener noreferrer">
+                      <img style={{ objectFit: "contain", width: 50, height: 50, marginRight: 20 }} src={skill.imgSrc} alt={skill.imgAltText} rounded="true" className="image-style m-1" />
+                    </a>
+                    <a href={skill.link} className="hostingPlatforms__name" style={{ textAlign: "center" }}>{skill.skillName}</a>
+                  </div>
+                ))}
+              </SkillsHostingPlatforms>
+            </CardContent>
+          </Card>
+        </SkillsBackend__Database__HostingPlatformCard>
 
-            <SkillsVersionControlCard>
-              <Card className={classes.root}>
-                <CardContent>
-                  <Typography className={classes.title} style={{textAlign: "center"}} variant="h4" component="h2" color="textPrimary">
-                    Version Control
+        <SkillsVersionControlCard>
+          <Card className={classes.root}>
+            <CardContent>
+              <Typography className={classes.title} style={{ textAlign: "center" }} variant="h4" component="h2" color="textPrimary">
+                Version Control
                     <hr />
-                  </Typography>
-                  <SkillsVersionControl>
-                    {skills.versionControl.map((skill, index) => (
-                    <div className="versionControl" key={index}>
-                      <a href={skill.link} target="_blank" rel="noopener noreferrer">
-                        <img style={{objectFit: "contain", width: 50, height: 50, marginRight: 20}} src={skill.imgSrc} alt={skill.imgAltText} rounded="true" className="image-style m-1" /> 
-                      </a>
-                      <a href={skill.link} className="versionControl__name" style={{textAlign: "center"}}>{skill.skillName}</a>
-                    </div>
-                   ))}
-                  </SkillsVersionControl>
-                </CardContent>
-              </Card>
-            </SkillsVersionControlCard>
-          </SkillCards>
-        </SkillsContainer>
-    )
+              </Typography>
+              <SkillsVersionControl>
+                {skills.versionControl.map((skill, index) => (
+                  <div className="versionControl" key={index}>
+                    <a href={skill.link} target="_blank" rel="noopener noreferrer">
+                      <img style={{ objectFit: "contain", width: 50, height: 50, marginRight: 20 }} src={skill.imgSrc} alt={skill.imgAltText} rounded="true" className="image-style m-1" />
+                    </a>
+                    <a href={skill.link} className="versionControl__name" style={{ textAlign: "center" }}>{skill.skillName}</a>
+                  </div>
+                ))}
+              </SkillsVersionControl>
+            </CardContent>
+          </Card>
+        </SkillsVersionControlCard>
+      </SkillCards>
+    </SkillsContainer>
+  )
 }
 
 export default Skills
@@ -184,17 +185,12 @@ const SkillsContainer = styled.div`
 const SkillsContainerHeader = styled.div`
 `;
 
-const SkillCards = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 20px; 
-`;
+
 
 const SkillsProgrammingLanguagesCard = styled.div.attrs(props => ({
   className: props.className,
 }))`
   flex: 0.25;
-
   & .programmingLanguages {
       display: flex;
       align-items: center;
@@ -366,4 +362,28 @@ const SkillsVersionControlCard = styled.div.attrs(props => ({
 
 const SkillsVersionControl = styled.div`
   padding: 5px;
+`;
+
+const SkillCards = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px; 
+
+  @media screen and (max-width: 960px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    > ${SkillsProgrammingLanguagesCard} {
+      margin-bottom: 10px;
+      margin-left: none;
+    }
+
+    > ${SkillsFrontendCard} {
+      margin-bottom: 10px;
+    }
+
+    > ${SkillsVersionControlCard} {
+      margin-top: 10px;
+    }
+  }
 `;
