@@ -4,8 +4,8 @@ import Tilt from "react-parallax-tilt";
 
 const Education = () => {
   return (
-    <EducationContainer>
-      <h1>education</h1>
+    <EducationContainer id="/education">
+      <EducationHeaderContainer><h1>education</h1></EducationHeaderContainer>
       <EducationDisplay>
         <EducationColorBackground>
           <Tilt perspective={700}>
@@ -32,7 +32,14 @@ const Education = () => {
 export default Education
 
 const EducationContainer = styled.div`
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 6px;
+  width: 100vw fit-content;
+  border-bottom: 1px solid black;
+`;
+
+const EducationHeaderContainer = styled.div`
   text-align: center;
 
   > h1 {
@@ -42,10 +49,6 @@ const EducationContainer = styled.div`
     margin-bottom: 15px;
     color: whitesmoke;
   }
-
-  display: flex;
-  flex-direction: column;
-  border-bottom: 1px solid black;
 `;
 
 const EducationDisplay = styled.div`

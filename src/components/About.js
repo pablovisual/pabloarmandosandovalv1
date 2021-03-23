@@ -31,7 +31,7 @@ const About = () => {
   }
 
   return (
-    <AboutContainer>
+    <AboutContainer id="/about">
       <About__Inner>
         <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
           <About__image>
@@ -87,16 +87,17 @@ const About = () => {
 export default About
 
 const AboutContainer = styled.div`
-  height: fit-content;
+  width: 100vw fit-content;
+  padding: 6px;
   border-bottom: 1px solid black;
 `;
 
 const About__Inner = styled.div`
-  padding: 15px;
   display: flex;
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  max-width: 100vw fit-content;
 `;
 
 const About__image = styled.div`

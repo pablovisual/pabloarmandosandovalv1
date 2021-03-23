@@ -96,9 +96,9 @@ const Experience = () => {
     };
 
     return (
-      <ExperienceContainer>
+      <ExperienceContainer id="/experience">
         {/**Title */}
-        <h1 className={classes.titleSection} >experience</h1>
+        <EducationHeaderContainer><h1 className={classes.titleSection} >experience</h1></EducationHeaderContainer>
         {/**Exp Details */}
         <ExperienceCard>
           <Accordion className={classes.root} square expanded={expanded === 'panel1'} onChange={handleChange("panel1")}>
@@ -149,14 +149,18 @@ export default Experience
 const ExperienceContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
-  align-items: center;
-  padding: 5px;
+  padding: 6px;
   border-bottom: 1px solid black;
+  width: 100vw fit-content;
+`;
+
+const EducationHeaderContainer = styled.div`
+  text-align: center;
 `;
 
 const ExperienceCard = styled.div`
   margin-bottom: 20px;
+  display: flex;
   justify-content: center;
 `;
 

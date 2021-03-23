@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: "iCielMedium";
   src:local("iCielMedium"), url("./fonts/iCiel-Medium.ttf") format("truetype");
@@ -16,7 +17,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: linear-gradient(-255deg, #7ee8fa 0%, #7ff4b5 50%, #80ff72 100%);
-
+  
 }
 
 code {

@@ -17,4 +17,5 @@ const FooterContainer = styled.div`
   text-align: center;
   font-size: 2em;
   padding: 10px;
+  width: 100vw fit-content;
 `;

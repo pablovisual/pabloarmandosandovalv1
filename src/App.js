@@ -16,36 +16,43 @@ function App() {
     //BEM
     <div className="app">
       <Router>
-      <>
-        {/* A <Switch> looks through its children <Route>s and
+        <>
+          {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-        <Header />
-        <Switch>
-          <Route path="/pabloarmandosandoval/" exact>
-            {/**About page */}
-            <About />
+          <Header />
+          <Switch>
+            {/*<Route path="/pabloarmandosandoval/"exact component={About} />
+            <Route path="/Skills" component={Skills} />
+            <Route path="/Experience" component={Experience} />
+            <Route path="/Projects" component={Projects} />
+            <Route path="/Education" component={Education} />
+            <Route path="/pabloarmandosandoval/contact" component={Contact} />
+          <Route path="/Footer" component={Footer} />*/} 
+          <Route path="/pabloarmandosandoval/">        
+              {/**About page */}
+              <About />
 
-            {/**Skills page */}
-            <Skills />
+              {/**Skills page */}
+              <Skills />
 
-            {/**Experience page */}
-            <Experience />
+              {/**Experience page */}
+              <Experience />
 
-            {/**Projects page */}
-            <Projects />
+              {/**Projects page */}
+              <Projects />
 
-            {/**Educations page */}
-            <Education />
+              {/**Educations page */}
+              <Education />
 
-            {/**Contact page */}
-            <Contact />
+              {/**Contact page */}
+              <Contact />
 
-            {/**Footer */}
-            <Footer />
-          </Route>
-        </Switch>
-      </>
-    </Router>
+              {/**Footer */}
+              <Footer />
+            </Route>
+          </Switch>
+        </>
+      </Router>
       {/**"Items => snapping"*/}
       {/**"Items => snapping"*/}
       {/**"Items => snapping"*/}

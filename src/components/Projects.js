@@ -57,10 +57,10 @@ const Projects = () => {
   const classes = useStyles();
 
   return (
-    <ProjectsContainer>
+    <ProjectsContainer id="/projects">
+      {/**title */}
+      <ProjectsHeaderContainer><h1 className={classes.titleSection}>projects</h1></ProjectsHeaderContainer>
       <ProjectList>
-        {/**title */}
-        <h1 className={classes.titleSection}>projects</h1>
         <VerticalTimeline>
           {getTimelineElements()}
           <VerticalTimelineElement
@@ -76,15 +76,16 @@ const Projects = () => {
 export default Projects
 
 const ProjectsContainer = styled.div`
+  padding: 6px;
   border-bottom: 1px solid black;
+  width: 100vw fit-content;
+`;
+
+const ProjectsHeaderContainer = styled.div`
+  text-align: center;
 `;
 
 const ProjectList = styled.div`
-  > h1 {
-    margin-top: 20px;
-    text-align: center;
-  }
-
   margin-bottom: 20px;
 `;
 

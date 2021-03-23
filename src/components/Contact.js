@@ -16,9 +16,9 @@ const getContactList = () => contactList.map(element => (
 
 const Contact = () => {
   return (
-    <ContactContainer>
+    <ContactContainer id="/contact">
       <ContactForm>
-        <PaperComponent style={{borderRadius: 15}} elevation={3}>
+        <PaperComponent style={{borderRadius: 15}} elevation={10}>
           <h1>Connect With Me</h1>
           {getContactList()}
         </PaperComponent>
@@ -30,9 +30,11 @@ const Contact = () => {
 export default Contact
 
 const ContactContainer = styled.div`
-  margin-top: 20px;
+  padding: 6px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
+  width: 100vw fit-content;
 `;
 
 const ContactForm = styled.div`

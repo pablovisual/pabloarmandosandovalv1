@@ -37,9 +37,9 @@ const Skills = () => {
   const classes = useStyles();
 
     return (
-        <SkillsContainer>
+        <SkillsContainer id="/skills">
           {/**title */}
-          <h1 className={classes.titleSection}>tech skills</h1>
+          <SkillsContainerHeader><h1 className={classes.titleSection}>tech skills</h1></SkillsContainerHeader>
           {/**skills*/}
           <SkillCards>
             {/**Programming Languages */}
@@ -176,9 +176,12 @@ export default Skills
 const SkillsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
-  padding: 5px;
+  padding: 6px;
   border-bottom: 1px solid black;
+  width: 100vw fit-content;
+`;
+
+const SkillsContainerHeader = styled.div`
 `;
 
 const SkillCards = styled.div`
