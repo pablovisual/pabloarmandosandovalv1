@@ -53,10 +53,6 @@ function App() {
           </Switch>
         </>
       </Router>
-      {/**"Items => snapping"*/}
-      {/**"Items => snapping"*/}
-      {/**"Items => snapping"*/}
-      {/**"Items => snapping"*/}
     </div>
   );
 }

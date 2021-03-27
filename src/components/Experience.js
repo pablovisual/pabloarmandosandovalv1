@@ -13,7 +13,7 @@ const useStyles = makeStyles({
     },
 
     titleSection: {
-      fontSize: 60,
+      fontSize: 'xxx-large',
       fontWeight: 400,
       textTransform: "uppercase",
       marginBottom: 15,
@@ -102,7 +102,7 @@ const Experience = () => {
         {/**Exp Details */}
         <ExperienceCard>
           <Accordion className={classes.root} square expanded={expanded === 'panel1'} onChange={handleChange("panel1")}>
-            <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
+            <AccordionSummary  className="test" aria-controls="panel1d-content" id="panel1d-header">
               <Typography className={classes.header}>ut: rio grande valley</Typography>
             </AccordionSummary>
           <AccordionDetails>
@@ -162,6 +162,12 @@ const ExperienceCard = styled.div`
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
+
+  @media screen and (max-width: 426px) {
+  p.MuiTypography-root{
+    font-size: larger;
+   }
+  }
 `;
 
 const ExperienceCompany = styled.div`
@@ -188,7 +194,14 @@ const ExperienceCompanyName = styled.div`
 const ExperienceCompanyImage = styled.div`
   > img {
     height: 200px;
-    width: 300px;
-    object-fit: contain;
+    
+  }
+
+  @media screen and (max-width: 426px) {
+  > img {
+    height: auto;
+    width: 100%;
+   
+  }
   }
 `;

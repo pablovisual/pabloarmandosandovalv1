@@ -14,7 +14,6 @@ const Education = () => {
               <EducationDegreeDetail>
                 <EducationDegreeLeft>
                   <p>b.s. degree of computer science</p>
-                  <p>gpa: 3.10</p>
                 </EducationDegreeLeft>
 
                 <EducationDegreeRight>
@@ -44,7 +43,7 @@ const EducationHeaderContainer = styled.div`
 
   > h1 {
     text-transform: uppercase;
-    font-size: 60px;
+    font-size: xxx-large;
     font-weight: 400;
     margin-bottom: 15px;
     color: whitesmoke;
@@ -87,6 +86,12 @@ const EducationDegreeHeader = styled.div`
     background-color: whitesmoke;
     padding: 10px;
   }
+
+  @media screen and (max-width: 426px) {
+    > h1 {
+      font-size: inherit;
+    }
+  }
 `;
 
 const EducationDegreeDetail = styled.div`
@@ -107,6 +112,12 @@ const EducationDegreeLeft = styled.div`
   > p:not(:last-child) {
     margin-bottom: 10px;
   }
+
+  @media screen and (max-width: 426px) {
+    > p {
+      font-size: small;
+    }
+  }
 `;
 
 const EducationDegreeRight = styled.div`
@@ -115,5 +126,11 @@ const EducationDegreeRight = styled.div`
     font-size: 20px;
     font-weight: 600px;
     text-transform: uppercase;
+  }
+
+  @media screen and (max-width: 426px) {
+    > p {
+      font-size: small;
+    }
   }
 `;

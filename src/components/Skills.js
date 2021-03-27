@@ -255,8 +255,7 @@ const SkillsBackend__Database__HostingPlatformCard = styled.div.attrs(props => (
   flex: 0.25;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-
+  
   & .backend {
       display: flex;
       align-items: center;
@@ -373,9 +372,11 @@ const SkillCards = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
     > ${SkillsProgrammingLanguagesCard} {
       margin-bottom: 10px;
-      margin-left: none;
+      margin-left: 0px !important;
+      
     }
 
     > ${SkillsFrontendCard} {
@@ -383,6 +384,7 @@ const SkillCards = styled.div`
     }
 
     > ${SkillsVersionControlCard} {
+      flex: none;
       margin-top: 10px;
     }
   }

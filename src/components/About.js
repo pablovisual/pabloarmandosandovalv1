@@ -16,10 +16,11 @@ import ArrowBackIosRoundedIcon from '@material-ui/icons/ArrowBackIosRounded';
 const useStyles = makeStyles({
   root: {
     maxWidth: 1200,
+    boxShadow: '-1px 4px 20px -6px rgba(0, 0, 0, 0.75)',
   },
 
   media: {
-    height: 340,
+    paddingTop: "56.25%"
   },
 });
 
@@ -33,7 +34,7 @@ const About = () => {
   return (
     <AboutContainer id="/about">
       <About__Inner>
-        <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
+        <ReactCardFlip className="test" isFlipped={isFlipped} flipDirection="horizontal">
           <About__image>
             <Card className={classes.root} style={{ width: 600 }} variant="outlined">
               <CardActionArea>
@@ -58,7 +59,7 @@ const About = () => {
 
           <About__description>
             <Card className={classes.root}>
-              <CardContent className={classes.media} style={{ padding: 20, width: 560, height: 374 }}>
+              <CardContent className={classes.media, "test"} style={{ padding: 20, width: 560, height: 374 }}>
                 <Typography variant="h5" component="h2" align="center">
                   Hello, my name is Pablo Armando Sandoval
                 </Typography>
@@ -88,7 +89,6 @@ export default About
 
 const AboutContainer = styled.div`
   width: 100vw fit-content;
-  padding: 6px;
   border-bottom: 1px solid black;
 `;
 
@@ -97,35 +97,58 @@ const About__Inner = styled.div`
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  max-width: 100vw fit-content;
 `;
 
 const About__image = styled.div`
-  box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
   border-radius: 4px;
+  @media screen and (max-width: 426px) {
+    display: flex;
+    justify-content: center;
+    .MuiPaper-root {
+      width: 90% !important;
+    }
+  }
+  
 `;
 
 
 const About__description = styled.div`
-  box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
   border-radius: 4px;
+
+  @media screen and (max-width: 426px) {
+    display: flex;
+    justify-content: center;
+    .MuiPaper-root.MuiCard-root {
+      width: 90% !important;
+    }
+
+    .MuiCardContent-root.test {
+      width: 90% !important;
+      height: auto !important;
+    }
+  }
 `;
 
 
 const About__front = styled.div`
   display: flex;
   justify-content: center;
-  font-size: 15px; 
+  align-items: center;
+  text-align: center;
+  @media screen and (max-width: 426px) {
+    margin-left: 34px;
+  } 
 
   > .MuiIconButton-root {
     margin-left: 15px;
     color: black;
   }
+
+  
 `;
 
 const About__back = styled.div`
   text-align: center;
-
   > .MuiIconButton-root {
     color: black;
   }

@@ -49,11 +49,8 @@ const HeaderContainer = styled.div`
   z-index: 999;
   width: 100vw fit-content;
 
-  @media screen and (max-width: 320px) {
-    position: sticky;
-    top: 0px;
-    z-index: 999;
-    width: 620px;
+  @media screen and (max-width: 321px) {
+    width: 95.25%;
   }
 `;
 

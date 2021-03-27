@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   titleSection: {
-    fontSize: 60,
+    fontSize: "xxx-large",
     fontWeight: 400,
     textTransform: "uppercase",
     marginBottom: 15,
@@ -70,16 +70,11 @@ const Projects = () => {
         </VerticalTimeline>
       </ProjectList>
     </ProjectsContainer>
+
   )
 }
 
 export default Projects
-
-const ProjectsContainer = styled.div`
-  padding: 6px;
-  border-bottom: 1px solid black;
-  width: 100vw fit-content;
-`;
 
 const ProjectsHeaderContainer = styled.div`
   text-align: center;
@@ -105,6 +100,13 @@ const ToolsList = styled.div`
   > p:not(:last-child){
     margin-right: 15px;
   }
+
+  @media screen and (max-width: 426px) {
+      display: inline-block;
+      > p {
+        display: inline-block;
+      }
+    }
 `;
 
 const ButtonList = styled.div.attrs(props => ({
@@ -126,4 +128,12 @@ const ButtonList = styled.div.attrs(props => ({
     border: 1px solid #4caf50;
     background-color: rgba(76, 175, 80, 0.04);
   }
+`;
+
+const ProjectsContainer = styled.div`
+  padding: 6px;
+  border-bottom: 1px solid black;
+  width: 100vw fit-content;
+      
+    
 `;

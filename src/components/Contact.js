@@ -52,7 +52,11 @@ const PaperComponent = styled(Paper)`
   }
   padding: 20px;
 
-  
+  @media screen and (max-width: 376px) {
+    > h1 {
+      font-size: xx-large;
+    }
+  }
 `;
 
 const ButtonList = styled.div`
@@ -65,5 +69,16 @@ const ButtonList = styled.div`
         margin-right: 10px;
       }
     }
+
+  @media screen and (max-width: 426px) {
+    display: block;
+    .buttonList {
+      display: flex;
+      :not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 10px
+      }
+    }
+  }
 `;
 

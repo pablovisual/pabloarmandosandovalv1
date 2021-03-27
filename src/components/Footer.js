@@ -18,4 +18,9 @@ const FooterContainer = styled.div`
   font-size: 2em;
   padding: 10px;
   width: 100vw fit-content;
+
+
+  @media screen and (max-width: 321px) {
+    width: 95.25%;
+  }
 `;
