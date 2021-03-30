@@ -76,14 +76,21 @@ const Projects = () => {
 
 export default Projects
 
+/**align the header text to the center of
+ * the div
+ */
 const ProjectsHeaderContainer = styled.div`
   text-align: center;
 `;
 
+/**give div a margin bottom of 20 */
 const ProjectList = styled.div`
   margin-bottom: 20px;
 `;
 
+/**give the tool framework list
+ * in the div some style
+ */
 const ToolsList = styled.div`
   display: flex;
   margin-top: -18px;
@@ -101,6 +108,8 @@ const ToolsList = styled.div`
     margin-right: 15px;
   }
 
+  /**the tool list changes into rows and column
+  when the screen goes below 426px */
   @media screen and (max-width: 426px) {
       display: inline-block;
       > p {
@@ -109,6 +118,10 @@ const ToolsList = styled.div`
     }
 `;
 
+/**override the material ui button to give
+ * it some styling color from the colors
+ * companies use for thier logo
+ */
 const ButtonList = styled.div.attrs(props => ({
   className: props.className,
 }))`
@@ -130,10 +143,11 @@ const ButtonList = styled.div.attrs(props => ({
   }
 `;
 
+/**give padding and border bottom to the div
+ * with 100vw
+ */
 const ProjectsContainer = styled.div`
   padding: 6px;
   border-bottom: 1px solid black;
   width: 100vw fit-content;
-      
-    
 `;

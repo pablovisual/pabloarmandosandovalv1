@@ -11,7 +11,6 @@ export const projectList = [
       contentArrowStyle: { borderRight: '7px solid  whitesmoke' },
       iconStyle: { background: '#80ff72', color: '#fff' },
       icon: <CodeIcon />,
-      style: {},
       key: 1,
     },
     title: 'Linkedin Clone',

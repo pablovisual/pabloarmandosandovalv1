@@ -13,6 +13,10 @@ const HeaderOption = ({ title, LinkToSection }) => {
 
 export default HeaderOption
 
+/**give the h3 tag except the last child a
+ * margin right and give style to the title
+ * options
+ */
 const HeaderOptionContainer = styled.div`
   display: flex;
   :not(:last-child) {
@@ -26,12 +30,16 @@ const HeaderOptionContainer = styled.div`
   }
 `;
 
+/** give some style to the Link component of
+ * react scroll Link
+*/
 const SmoothScrollLink = styled(Link)`
   :hover {
     cursor: pointer;
     color: green;
   }
-
+  /**give a new hover effect when screen
+  hits 960px */
   @media screen and (max-width: 960px) {
     :hover {
       cursor: pointer;

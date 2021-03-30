@@ -174,6 +174,10 @@ const Skills = () => {
 
 export default Skills
 
+/**give display of flex with the column
+ * as the direction, add some padding with
+ * border bottom and width of 100vw
+ */
 const SkillsContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -185,8 +189,13 @@ const SkillsContainer = styled.div`
 const SkillsContainerHeader = styled.div`
 `;
 
-
-
+/**this is where I set each card to hold a flex
+ * of 0.25 so each one has a certain amount of 
+ * space to cover.
+ * and give same style to each div for programming
+ * languages, frontend, backend, database, hosting
+ * platform and version control cards
+ */
 const SkillsProgrammingLanguagesCard = styled.div.attrs(props => ({
   className: props.className,
 }))`
@@ -363,11 +372,18 @@ const SkillsVersionControl = styled.div`
   padding: 5px;
 `;
 
+/**this div gives each card some 
+ * space, evenly so no card will
+ * have more than the other
+ */
 const SkillCards = styled.div`
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 20px; 
 
+  /**when the screen go lower than 960px
+  make the cards go into a column of one with 
+  how many cards there are for the rows */
   @media screen and (max-width: 960px) {
     display: flex;
     flex-direction: column;

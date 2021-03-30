@@ -146,6 +146,9 @@ const Experience = () => {
 
 export default Experience
 
+/**set the div with column direction add padding
+ * 100vw and border bottom
+ */
 const ExperienceContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -154,15 +157,19 @@ const ExperienceContainer = styled.div`
   width: 100vw fit-content;
 `;
 
+/**center the header text */
 const EducationHeaderContainer = styled.div`
   text-align: center;
 `;
 
+/**center the content div and give a bottom margin*/
 const ExperienceCard = styled.div`
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
 
+/**change the page text to font size small
+when the screen goes 426px or smaller */
   @media screen and (max-width: 426px) {
   p.MuiTypography-root{
     font-size: larger;
@@ -170,11 +177,18 @@ const ExperienceCard = styled.div`
   }
 `;
 
+/**have some space between page text and img */
 const ExperienceCompany = styled.div`
   display: flex;
   justify-content: space-between;
 `;
 
+/**give some margin to the bottom of h1 tag
+ * as well to the p tag and color gray except
+ * for the last child, then target the strong
+ * tag from the p tag and change the color and
+ * font size
+ */
 const ExperienceCompanyName = styled.div`
   h1 {
     margin-bottom: 20px;
@@ -191,12 +205,14 @@ const ExperienceCompanyName = styled.div`
   }
 `;
 
+/**set the img height size to 200px */
 const ExperienceCompanyImage = styled.div`
   > img {
     height: 200px;
-    
   }
 
+  /**change the height to auto and width responsive
+  of 100% when the screen width hits 426px or smaller */
   @media screen and (max-width: 426px) {
   > img {
     height: auto;
