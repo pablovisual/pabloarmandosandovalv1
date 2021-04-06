@@ -44,7 +44,7 @@ const getTimelineElements = () => projectList.map((element, index) => (
       {Object.entries(element.sources).map(
         (key, index) => (
           <ThemeProvider key={index} theme={theme}>
-            <Button className="buttonList" href={key[1]} variant="outlined" color='primary'>
+            <Button target="_blank" rel="noopener noreferrer" className="buttonList" href={key[1]} variant="outlined" color='primary'>
               {key[0]}
             </Button>
           </ThemeProvider>

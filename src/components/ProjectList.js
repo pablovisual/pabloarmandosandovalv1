@@ -24,7 +24,7 @@ export const projectList = [
     ],
     sources: {
       "Source Code": "https://github.com/pablovisual/whatsapp-v2",
-      "View Demo": "https://whatsapp-v2-mu.vercel.app/"
+      "View Demo": "https://whatsapp-v2-mu.vercel.app/",
     },
   },
 

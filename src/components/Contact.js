@@ -7,7 +7,7 @@ import { contactList } from "./ContactList";
 const getContactList = () => contactList.map(element => (
   <ButtonList>
     {Object.entries(element.sources).map((key, index) => (
-      <Button style={{color: `${key[1][2]}`, border: `1px solid ${key[1][2]}`}} className="buttonList" href={key[1][0]} key={index} size="large" variant="outlined" startIcon={key[1][1]}>
+      <Button target="_blank" rel="noopener noreferrer" style={{color: `${key[1][2]}`, border: `1px solid ${key[1][2]}`}} className="buttonList" href={key[1][0]} key={index} size="large" variant="outlined" startIcon={key[1][1]}>
         {key[0]}
       </Button>
     ))}
