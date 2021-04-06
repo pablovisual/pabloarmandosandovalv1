@@ -24,7 +24,7 @@ const useStyles = makeStyles({
   },
 });
 
-const About = () => {
+function About () {
   const classes = useStyles();
   const [isFlipped, setIsFlipped] = useState(false);
   const handleClick = () => {

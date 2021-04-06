@@ -5,7 +5,7 @@ import SchoolIcon from "@material-ui/icons/School";
 export const projectList = [
   {
     props: {
-      date: 'In Progress',
+      date: '04/05/2021',
       className: 'vertical-timeline-element--project',
       contentStyle: { background: 'whitesmoke', color: 'black', boxShadow: "-1px 4px 20px -6px rgba(0, 0, 0, 0.75)", borderTop: "4px solid #80ff72" },
       contentArrowStyle: { borderRight: '7px solid  whitesmoke' },
@@ -13,18 +13,19 @@ export const projectList = [
       icon: <CodeIcon />,
       key: 1,
     },
-    title: 'Linkedin Clone',
+    title: 'whatsapp v2',
     subtitle: 'Online Course',
     content: 'Social Media',
     tools: [
       "Firebase",
       "Material-UI",
+      "NextJS",
       "ReactJS",
       "Redux",
     ],
     sources: {
-      "Source Code": "#",
-      "View Demo": "#"
+      "Source Code": "https://github.com/pablovisual/whatsapp-v2",
+      "View Demo": "https://whatsapp-v2-mu.vercel.app/"
     },
   },
 
@@ -38,7 +39,7 @@ export const projectList = [
       icon: <CodeIcon />,
       key: 2,
     },
-    title: 'Twitter Clone',
+    title: 'Linkedin Clone',
     subtitle: 'Online Course',
     content: 'Social Media',
     tools: [
@@ -48,8 +49,8 @@ export const projectList = [
       "Redux",
     ],
     sources: {
-      "Source Code": "#",
-      "View Demo": "#"
+      "Source Code": "https://github.com/pablovisual/linkedin-clone",
+      "View Demo": "https://linkedin-clone-fbac6.web.app/"
     },
   },
 
@@ -63,7 +64,7 @@ export const projectList = [
       icon: <CodeIcon />,
       key: 3,
     },
-    title: 'Facebook Clone',
+    title: 'Twitter Clone',
     subtitle: 'Online Course',
     content: 'Social Media',
     tools: [
@@ -73,8 +74,8 @@ export const projectList = [
       "Redux",
     ],
     sources: {
-      "Source Code": "#",
-      "View Demo": "#"
+      "Source Code": "https://github.com/pablovisual/twitter-clone",
+      "View Demo": "https://twitter-clone-d1663.web.app"
     },
   },
 
@@ -88,6 +89,31 @@ export const projectList = [
       icon: <CodeIcon />,
       key: 4,
     },
+    title: 'Facebook Clone',
+    subtitle: 'Online Course',
+    content: 'Social Media',
+    tools: [
+      "Firebase",
+      "Material-UI",
+      "ReactJS",
+      "Redux",
+    ],
+    sources: {
+      "Source Code": "https://github.com/pablovisual/facebook-clone",
+      "View Demo": "https://facebook-clone-57447.web.app"
+    },
+  },
+
+  {
+    props: {
+      date: 'In Progress',
+      className: 'vertical-timeline-element--project',
+      contentStyle: { background: 'whitesmoke', color: 'black', boxShadow: "-1px 4px 20px -6px rgba(0, 0, 0, 0.75)", borderTop: "4px solid #80ff72" },
+      contentArrowStyle: { borderRight: '7px solid  whitesmoke' },
+      iconStyle: { background: '#80ff72', color: '#fff' },
+      icon: <CodeIcon />,
+      key: 5,
+    },
     title: 'Discord clone',
     subtitle: 'Online Course',
     content: 'Social Media',
@@ -98,33 +124,8 @@ export const projectList = [
       "Redux",
     ],
     sources: {
-      "Source Code": "#",
-      "View Demo": "#"
-    },
-  },
-
-  {
-    props: {
-      date: '12/29/2020',
-      className: 'vertical-timeline-element--project',
-      contentStyle: { background: 'whitesmoke', color: 'black', boxShadow: "-1px 4px 20px -6px rgba(0, 0, 0, 0.75)", borderTop: "4px solid #80ff72" },
-      contentArrowStyle: { borderRight: '7px solid  whitesmoke' },
-      iconStyle: { background: '#80ff72', color: '#fff' },
-      icon: <CodeIcon />,
-      key: 5,
-    },
-    title: 'Whatsapp Clone',
-    subtitle: 'Online Course',
-    content: 'Social Media',
-    tools: [
-      "Axios",
-      "Material-UI",
-      "MongoDB",
-      "ReactJS",
-    ],
-    sources: {
-      "Source Code": "#",
-      "View Demo": "#"
+      "Source Code": "https://github.com/pablovisual/discord-clone",
+      "View Demo": "https://discord-clone-aa115.web.app"
     },
   },
 
@@ -136,7 +137,7 @@ export const projectList = [
       contentArrowStyle: { borderRight: '7px solid  whitesmoke' },
       iconStyle: { background: '#80ff72', color: '#fff' },
       icon: <CodeIcon />,
-      key: 6,
+      key: 7,
     },
     title: 'Amazon Clone',
     subtitle: 'Online Course',
@@ -148,8 +149,8 @@ export const projectList = [
       "Redux",
     ],
     sources: {
-      "Source Code": "#",
-      "View Demo": "#"
+      "Source Code": "https://github.com/pablovisual/amazon-clone",
+      "View Demo": "https://challenge-42cfe.web.app"
     },
   },
 
@@ -161,10 +162,10 @@ export const projectList = [
       contentArrowStyle: { borderRight: '7px solid  whitesmoke' },
       iconStyle: { background: '#80ff72', color: '#fff' },
       icon: <CodeIcon />,
-      key: 7,
+      key: 8,
     },
     title: "My website",
-    subtitle: 'First one I made',
+    subtitle: 'First one I published.',
     content: 'Porfolio',
     tools: [
       "Bootstrap",
@@ -187,7 +188,7 @@ export const projectList = [
       contentArrowStyle: { borderRight: '7px solid  whitesmoke' },
       iconStyle: { background: '#80ff72', color: '#fff' },
       icon: <SchoolIcon />,
-      key: 8,
+      key: 9,
     },
     title: "Basketball Scoreboard",
     subtitle: 'Flutter',

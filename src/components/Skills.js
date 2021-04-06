@@ -34,7 +34,7 @@ const useStyles = makeStyles({
   },
 });
 
-const Skills = () => {
+function Skills () {
   const classes = useStyles();
 
   return (
