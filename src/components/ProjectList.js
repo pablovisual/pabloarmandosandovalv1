@@ -21,7 +21,6 @@ export const projectList = [
       "Material-UI",
       "NextJS",
       "ReactJS",
-      "Redux",
     ],
     sources: {
       "Source Code": "https://github.com/pablovisual/whatsapp-v2",
