@@ -93,6 +93,7 @@ const ProjectList = styled.div`
  */
 const ToolsList = styled.div`
   display: flex;
+  flex-wrap: wrap;
   margin-top: -18px;
   margin-bottom: 15px;
 
@@ -107,15 +108,6 @@ const ToolsList = styled.div`
   > p:not(:last-child){
     margin-right: 15px;
   }
-
-  /**the tool list changes into rows and column
-  when the screen goes below 426px */
-  @media screen and (max-width: 426px) {
-      display: inline-block;
-      > p {
-        display: inline-block;
-      }
-    }
 `;
 
 /**override the material ui button to give
