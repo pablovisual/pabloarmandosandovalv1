@@ -199,7 +199,6 @@ const SkillsContainerHeader = styled.div`
 const SkillsProgrammingLanguagesCard = styled.div.attrs(props => ({
   className: props.className,
 }))`
-  flex: 0.25;
   & .programmingLanguages {
       display: flex;
       align-items: center;
@@ -230,16 +229,15 @@ const SkillsProgrammingLanguages = styled.div`
 const SkillsFrontendCard = styled.div.attrs(props => ({
   className: props.className,
 }))`
-  flex: 0.25;
 
-  & .frontend {
+   .frontend {
       display: flex;
       align-items: center;
       margin-bottom: 8px;
       padding: 10px;
   }
 
-  & .frontend:hover {
+   .frontend:hover {
     background-color: whitesmoke;
     border-radius: 10px;
     cursor: pointer;
@@ -247,7 +245,7 @@ const SkillsFrontendCard = styled.div.attrs(props => ({
     object-fit: contain;
   }
 
-  & .frontend__name {
+  .frontend__name {
     text-decoration: none;
     color: #343a40;
     text-align: center;
@@ -261,7 +259,6 @@ const SkillsFrontend = styled.div`
 const SkillsBackend__Database__HostingPlatformCard = styled.div.attrs(props => ({
   className: props.className,
 }))`
-  flex: 0.25;
   display: flex;
   flex-direction: column;
   
@@ -344,7 +341,6 @@ const SkillsHostingPlatforms = styled.div`
 const SkillsVersionControlCard = styled.div.attrs(props => ({
   className: props.className,
 }))`
-  flex: 0.25;
   
   & .versionControl {
       display: flex;
@@ -392,10 +388,10 @@ const SkillCards = styled.div`
     > ${SkillsProgrammingLanguagesCard} {
       margin-bottom: 10px;
       margin-left: 0px !important;
-      
     }
 
     > ${SkillsFrontendCard} {
+      
       margin-bottom: 10px;
     }
 

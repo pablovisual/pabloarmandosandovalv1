@@ -28,7 +28,7 @@ function App() {
             <Route path="/Education" component={Education} />
             <Route path="/pabloarmandosandoval/contact" component={Contact} />
           <Route path="/Footer" component={Footer} />*/} 
-          <Route path="/pabloarmandosandoval/">        
+          <Route path="/pabloarmandosandovalv1/">        
               {/**About page */}
               <About />
 
